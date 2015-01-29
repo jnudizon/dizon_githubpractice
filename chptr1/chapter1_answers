@@ -1,0 +1,8 @@
+Chapter 1 answers
+sudo apt-get install git
+
+ubuntu01@ubuntubootcampvm:~$ git config --global user.name "Nick Dizon"
+ubuntu01@ubuntubootcampvm:~$ git config --global user.email "jnudizon@addu.edu.ph"
+ubuntu01@ubuntubootcampvm:~$ git init
+
+

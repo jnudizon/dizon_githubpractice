@@ -1,0 +1,1 @@
+Chapter 1 is about the basics of version control, what Git is, its implications as a distributed version control system and what it requires to work with Git on the command line of one's own system. This includes the setting up of the local Git environment and the configuration variables that handle Git's look and feel.
