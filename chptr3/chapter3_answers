@@ -38,3 +38,184 @@ ubuntu01@ubuntubootcampvm:~/dizon_githubpractice$ git log --oneline --decorate -
 * 0511886 Initial commit
 ubuntu01@ubuntubootcampvm:~/dizon_githubpractice$ 
 
+ubuntu01@ubuntubootcampvm:~/dizon_githubpractice$ git push origin master
+Username for 'https://github.com': jnudizon
+Password for 'https://jnudizon@github.com': 
+Counting objects: 5, done.
+Delta compression using up to 2 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 750 bytes | 0 bytes/s, done.
+Total 4 (delta 1), reused 0 (delta 0)
+To https://github.com/jnudizon/dizon_githubpractice
+   d563b62..6e8f8c2  master -> master
+ubuntu01@ubuntubootcampvm:~/dizon_githubpractice$ git push origin testing
+Username for 'https://github.com': jnudizon
+Password for 'https://jnudizon@github.com': 
+Counting objects: 6, done.
+Delta compression using up to 2 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 434 bytes | 0 bytes/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+To https://github.com/jnudizon/dizon_githubpractice
+ * [new branch]      testing -> testing
+ubuntu01@ubuntubootcampvm:~/dizon_githubpractice$ git remote
+origin
+ubuntu01@ubuntubootcampvm:~/dizon_githubpractice$ git remote -v
+origin	https://github.com/jnudizon/dizon_githubpractice (fetch)
+origin	https://github.com/jnudizon/dizon_githubpractice (push)
+ubuntu01@ubuntubootcampvm:~/dizon_githubpractice$ git remote add jn https://github.com/jnudizon/dizon_githubpractice
+ubuntu01@ubuntubootcampvm:~/dizon_githubpractice$ git fetch jn
+From https://github.com/jnudizon/dizon_githubpractice
+ * [new branch]      master     -> jn/master
+ * [new branch]      testing    -> jn/testing
+ubuntu01@ubuntubootcampvm:~/dizon_githubpractice$ git remote rename jn nick
+ubuntu01@ubuntubootcampvm:~/dizon_githubpractice$ git remote
+nick
+origin
+ubuntu01@ubuntubootcampvm:~/dizon_githubpractice$ ^C
+ubuntu01@ubuntubootcampvm:~/dizon_githubpractice$ 
+ubuntu01@ubuntubootcampvm:~/dizon_githubpractice$ cd chptr3
+ubuntu01@ubuntubootcampvm:~/dizon_githubpractice/chptr3$ cd .
+ubuntu01@ubuntubootcampvm:~/dizon_githubpractice/chptr3$ cd.
+No command 'cd.' found, did you mean:
+ Command 'cdv' from package 'codeville' (universe)
+ Command 'cdw' from package 'cdw' (universe)
+ Command 'cde' from package 'cde' (universe)
+ Command 'cdo' from package 'cdo' (universe)
+ Command 'cdp' from package 'irpas' (multiverse)
+ Command 'cdb' from package 'tinycdb' (main)
+ Command 'cd5' from package 'cd5' (universe)
+ Command 'cdi' from package 'cdo' (universe)
+cd.: command not found
+ubuntu01@ubuntubootcampvm:~/dizon_githubpractice/chptr3$ cd ..
+ubuntu01@ubuntubootcampvm:~/dizon_githubpractice$ git branch hotfix
+ubuntu01@ubuntubootcampvm:~/dizon_githubpractice$ cd chptr3
+ubuntu01@ubuntubootcampvm:~/dizon_githubpractice/chptr3$ nano fix.md
+ubuntu01@ubuntubootcampvm:~/dizon_githubpractice/chptr3$ git add fix.md
+ubuntu01@ubuntubootcampvm:~/dizon_githubpractice/chptr3$ git commit 
+[master 9973aad] --added fix.md to hotfix branch
+ 1 file changed, 1 insertion(+)
+ create mode 100644 chptr3/fix.md
+ubuntu01@ubuntubootcampvm:~/dizon_githubpractice/chptr3$ git push
+warning: push.default is unset; its implicit value is changing in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the current behavior after the default changes, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+In Git 2.0, Git will default to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Username for 'https://github.com': jnudizon
+Password for 'https://jnudizon@github.com': 
+Counting objects: 7, done.
+Delta compression using up to 2 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 360 bytes | 0 bytes/s, done.
+Total 4 (delta 1), reused 0 (delta 0)
+To https://github.com/jnudizon/dizon_githubpractice
+   6e8f8c2..9973aad  master -> master
+ubuntu01@ubuntubootcampvm:~/dizon_githubpractice/chptr3$ git checkout hotfix
+M	chptr2/chapter2_answers
+M	chptr3/chapter3_answers
+Switched to branch 'hotfix'
+ubuntu01@ubuntubootcampvm:~/dizon_githubpractice/chptr3$ dir
+chapter3_answers  chapter3_answers~
+ubuntu01@ubuntubootcampvm:~/dizon_githubpractice/chptr3$ ls
+chapter3_answers  chapter3_answers~
+ubuntu01@ubuntubootcampvm:~/dizon_githubpractice/chptr3$ ls
+chapter3_answers  chapter3_answers~
+ubuntu01@ubuntubootcampvm:~/dizon_githubpractice/chptr3$ nano fix.md
+ubuntu01@ubuntubootcampvm:~/dizon_githubpractice/chptr3$ git add fix.md
+ubuntu01@ubuntubootcampvm:~/dizon_githubpractice/chptr3$ git commit
+[hotfix 46c18fe] added fix.md to hotfix branch. remind me to always checkout to a new branch when making changes.
+ 1 file changed, 1 insertion(+)
+ create mode 100644 chptr3/fix.md
+ubuntu01@ubuntubootcampvm:~/dizon_githubpractice/chptr3$ git push
+warning: push.default is unset; its implicit value is changing in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the current behavior after the default changes, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+In Git 2.0, Git will default to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Username for 'https://github.com': jnudizon
+Password for 'https://jnudizon@github.com': 
+Everything up-to-date
+ubuntu01@ubuntubootcampvm:~/dizon_githubpractice/chptr3$ git push origin hotfix
+Username for 'https://github.com': jnudizon
+Password for 'https://jnudizon@github.com': 
+Counting objects: 10, done.
+Delta compression using up to 2 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 413 bytes | 0 bytes/s, done.
+Total 4 (delta 1), reused 0 (delta 0)
+To https://github.com/jnudizon/dizon_githubpractice
+ * [new branch]      hotfix -> hotfix
+ubuntu01@ubuntubootcampvm:~/dizon_githubpractice/chptr3$ git checkout master
+M	chptr2/chapter2_answers
+M	chptr3/chapter3_answers
+Switched to branch 'master'
+Your branch is up-to-date with 'origin/master'.
+ubuntu01@ubuntubootcampvm:~/dizon_githubpractice/chptr3$ git merge hotfix
+Auto-merging chptr3/fix.md
+CONFLICT (add/add): Merge conflict in chptr3/fix.md
+Automatic merge failed; fix conflicts and then commit the result.
+ubuntu01@ubuntubootcampvm:~/dizon_githubpractice/chptr3$ git remove fix.md
+git: 'remove' is not a git command. See 'git --help'.
+
+Did you mean this?
+	remote
+ubuntu01@ubuntubootcampvm:~/dizon_githubpractice/chptr3$ git rm fix.md
+chptr3/fix.md: needs merge
+rm 'chptr3/fix.md'
+ubuntu01@ubuntubootcampvm:~/dizon_githubpractice/chptr3$ git rm fix.md
+fatal: pathspec 'fix.md' did not match any files
+ubuntu01@ubuntubootcampvm:~/dizon_githubpractice/chptr3$ git commit stuffs
+fatal: cannot do a partial commit during a merge.
+ubuntu01@ubuntubootcampvm:~/dizon_githubpractice/chptr3$ git merge hotfix
+fatal: You have not concluded your merge (MERGE_HEAD exists).
+Please, commit your changes before you can merge.
+ubuntu01@ubuntubootcampvm:~/dizon_githubpractice/chptr3$ git commit -a -m 'fixed conflicts...probably'
+[master efb0f93] fixed conflicts...probably
+ubuntu01@ubuntubootcampvm:~/dizon_githubpractice/chptr3$ git merge hotfix
+Already up-to-date.
+ubuntu01@ubuntubootcampvm:~/dizon_githubpractice/chptr3$ git push origin master
+Username for 'https://github.com': jnudizon
+Password for 'https://jnudizon@github.com': 
+Counting objects: 14, done.
+Delta compression using up to 2 threads.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (6/6), 1002 bytes | 0 bytes/s, done.
+Total 6 (delta 3), reused 0 (delta 0)
+To https://github.com/jnudizon/dizon_githubpractice
+   9973aad..efb0f93  master -> master
+ubuntu01@ubuntubootcampvm:~/dizon_githubpractice/chptr3$ 
+
+
