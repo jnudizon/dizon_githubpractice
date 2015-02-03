@@ -217,5 +217,18 @@ Total 6 (delta 3), reused 0 (delta 0)
 To https://github.com/jnudizon/dizon_githubpractice
    9973aad..efb0f93  master -> master
 ubuntu01@ubuntubootcampvm:~/dizon_githubpractice/chptr3$ 
-
+ubuntu01@ubuntubootcampvm:~/dizon_githubpractice/chptr3$ git branch
+* master
+  testing
+ubuntu01@ubuntubootcampvm:~/dizon_githubpractice/chptr3$ git branch -v
+* master  68cbd5a [ahead 1] i dont really know why im committing but ill do it anyway
+  testing 9660d97 made a change
+ubuntu01@ubuntubootcampvm:~/dizon_githubpractice/chptr3$ git branch --merged
+* master
+ubuntu01@ubuntubootcampvm:~/dizon_githubpractice/chptr3$ git branch --no-merged
+  testing
+ubuntu01@ubuntubootcampvm:~/dizon_githubpractice/chptr3$ git branch -d testing
+error: The branch 'testing' is not fully merged.
+If you are sure you want to delete it, run 'git branch -D testing'.
+ubuntu01@ubuntubootcampvm:~/dizon_githubpractice/chptr3$ 
 
