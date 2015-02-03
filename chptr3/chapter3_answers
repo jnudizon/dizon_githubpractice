@@ -1,0 +1,20 @@
+ubuntu01@ubuntubootcampvm:~/dizon_githubpractice$ mkdir chptr3
+ubuntu01@ubuntubootcampvm:~/dizon_githubpractice$ nano README.md
+ubuntu01@ubuntubootcampvm:~/dizon_githubpractice$ git branch testing
+ubuntu01@ubuntubootcampvm:~/dizon_githubpractice$ git log --oneline --decorate
+d563b62 (HEAD, origin/master, origin/HEAD, testing, master) "removed ~ temporary file."
+8b7069c "Added Readme for chapter 2."
+3a783e5 "Ignoring ~ temporary files."
+0d2c6a2 "Third commit. Added chptr2 directory and removed NOTAFILE.md"
+8b5538e (tag: v1.0) "Second commit"
+3b77f99 "This is my first commit."
+0511886 Initial commit
+ubuntu01@ubuntubootcampvm:~/dizon_githubpractice$ git checkout testing
+M	README.md
+Switched to branch 'testing'
+ubuntu01@ubuntubootcampvm:~/dizon_githubpractice$ nano test.rb
+ubuntu01@ubuntubootcampvm:~/dizon_githubpractice$ git add chptr3
+ubuntu01@ubuntubootcampvm:~/dizon_githubpractice$ git commit -a -m 'made a change'
+[testing 9660d97] made a change
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+
