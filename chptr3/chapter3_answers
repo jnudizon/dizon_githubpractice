@@ -17,4 +17,24 @@ ubuntu01@ubuntubootcampvm:~/dizon_githubpractice$ git add chptr3
 ubuntu01@ubuntubootcampvm:~/dizon_githubpractice$ git commit -a -m 'made a change'
 [testing 9660d97] made a change
  1 file changed, 5 insertions(+), 1 deletion(-)
+ubuntu01@ubuntubootcampvm:~/dizon_githubpractice$ git checkout master
+Switched to branch 'master'
+Your branch is up-to-date with 'origin/master'.
+ubuntu01@ubuntubootcampvm:~/dizon_githubpractice$ git add chptr3
+ubuntu01@ubuntubootcampvm:~/dizon_githubpractice$ git commit -a -m 'made other changes'
+[master 6e8f8c2] made other changes
+ 1 file changed, 20 insertions(+)
+ create mode 100644 chptr3/chapter3_answers
+ubuntu01@ubuntubootcampvm:~/dizon_githubpractice$ git log --oneline --decorate --graph --all
+* 6e8f8c2 (HEAD, master) made other changes
+| * 9660d97 (testing) made a change
+|/  
+* d563b62 (origin/master, origin/HEAD) "removed ~ temporary file."
+* 8b7069c "Added Readme for chapter 2."
+* 3a783e5 "Ignoring ~ temporary files."
+* 0d2c6a2 "Third commit. Added chptr2 directory and removed NOTAFILE.md"
+* 8b5538e (tag: v1.0) "Second commit"
+* 3b77f99 "This is my first commit."
+* 0511886 Initial commit
+ubuntu01@ubuntubootcampvm:~/dizon_githubpractice$ 
 

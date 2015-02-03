@@ -115,6 +115,22 @@ Branch master set up to track remote branch master from origin.
   Local ref configured for 'git push':
     master pushes to master (up to date)
 
+ubuntu01@ubuntubootcampvm:~/dizon_githubpractice$ git remote
+origin
+ubuntu01@ubuntubootcampvm:~/dizon_githubpractice$ git remote -v
+origin	https://github.com/jnudizon/dizon_githubpractice (fetch)
+origin	https://github.com/jnudizon/dizon_githubpractice (push)
+ubuntu01@ubuntubootcampvm:~/dizon_githubpractice$ git remote add jn https://github.com/jnudizon/dizon_githubpractice
+ubuntu01@ubuntubootcampvm:~/dizon_githubpractice$ git fetch jn
+From https://github.com/jnudizon/dizon_githubpractice
+ * [new branch]      master     -> jn/master
+ * [new branch]      testing    -> jn/testing
+ubuntu01@ubuntubootcampvm:~/dizon_githubpractice$ git remote rename jn nick
+ubuntu01@ubuntubootcampvm:~/dizon_githubpractice$ git remote
+nick
+origin
+
+
 >git tag
 ubuntu01@ubuntubootcampvm:~/dizon_githubpractice/chptr1$ git tag -a v1.0 -m 'my version 1.0'
 ubuntu01@ubuntubootcampvm:~/dizon_githubpractice/chptr1$ git show v1.0
